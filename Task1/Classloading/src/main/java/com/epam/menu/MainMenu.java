@@ -36,8 +36,7 @@ public class MainMenu {
 				String num = sc.nextLine();
 				if (!EXIT_CODE.equals(num)) {
 					try {
-						return classRepo.getClassName(Integer.parseInt(sc
-								.nextLine()));
+						return classRepo.getClassName(Integer.parseInt(num));
 					} catch (NumberFormatException e) {
 						LOG.error(e);
 					} catch (IndexOutOfBoundsException e) {
@@ -53,7 +52,7 @@ public class MainMenu {
 
 	public void start() {
 		while (true) {
-			System.out.println("Enter patch to jar file or '-1' to exit:");
+			System.out.println("Enter path to jar file or '-1' to exit:");
 			String path = sc.nextLine();
 			if (!EXIT_CODE.equals(path)) {
 				try {
