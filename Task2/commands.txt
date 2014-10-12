@@ -1,0 +1,74 @@
+Write a Command Line that starts a JavaApp using the Serial Collector with the following parameters
+
+the 6m initial heap size for when the JVM starts
+the18m maximum heap size
+the2m size of the Young Generation
+the 20m starting size of the Permanent Generation
+the 30 maximum size of the Permanent Generation
+
+java -Xms6m -Xmx18m -Xmn2m -XX:PermSize=20m -XX:MaxPermSize=30m -XX:+UseSerialGC -jar <path_to_jar>
+
+
+Write a Command Line that starts a JavaApp using the Parallel Collector with the following parameters
+
+the 3m initial heap size for when the JVM starts
+the12m maximum heap size
+the1m size of the Young Generation
+the 20m starting size of the Permanent Generation
+the 20 maximum size of the Permanent Generation
+
+java -Xms3m -Xmx12m -Xmn1m -XX:PermSize=20m -XX:MaxPermSize=20m -XX:+UseParallelGC -jar <path_to_jar>
+
+
+Write a Command Line that starts a JavaApp using the Parallel Old Collector with the following parameters
+
+the 9m initial heap size for when the JVM starts
+the18m maximum heap size
+the3m size of the Young Generation
+the 40m starting size of the Permanent Generation
+the 40 maximum size of the Permanent Generation
+
+java -Xms9m -Xmx18m -Xmn3m -XX:PermSize=40m -XX:MaxPermSize=40m -XX:+UseParallelOldGC -jar <path_to_jar>
+
+
+Write a Command Line that starts a JavaApp using the Concurrent Mark Sweep (CMS) Collector with the following parameters
+
+the 6m initial heap size for when the JVM starts
+the18m maximum heap size
+the 2m size of the Young Generation
+the 20m starting size of the Permanent Generation
+the 30 maximum size of the Permanent Generatio
+
+java -Xms6m -Xmx18m -Xmn2m -XX:PermSize=20m -XX:MaxPermSize=30m -XX:+UseConcMarkSweepGC -jar <path_to_jar>
+
+
+Write a Command Line that starts a JavaApp using the Concurrent Mark Sweep (CMS) Collector with 2 Parallel CMS Threads with the following parameters
+
+the 2m initial heap size for when the JVM starts
+the18m maximum heap size
+the 1m size of the Young Generation
+the 24m starting size of the Permanent Generation
+the 36 maximum size of the Permanent Generation
+
+java -Xms2m -Xmx18m -Xmn1m -XX:PermSize=24m -XX:MaxPermSize=36m -XX:+UseConcMarkSweepGC -XX:ParallelCMSThreads=2 -jar <path_to_jar>
+
+
+Write a Command Line that starts a JavaApp using the Parallel Collector with 2 Parallel CMS Threads with the following parameters
+
+the 4m initial heap size for when the JVM starts
+the16m maximum heap size
+the3m size of the Young Generation
+the 24m starting size of the Permanent Generation
+the 32 maximum size of the Permanent Generation
+
+java -Xms4m -Xmx16m -Xmn3m -XX:PermSize=24m -XX:MaxPermSize=32m -XX:+UseParallelGC -XX:ParallelGCThreads=2 -jar <path_to_jar>
+
+Write a Command Line that starts a JavaApp using theG1 Garbage Collector with the following parameters
+
+the 4m initial heap size for when the JVM starts
+the16m maximum heap size
+them 2m size of the Young Generation
+the 12m starting size of the Permanent Generation
+the 18 maximum size of the Permanent Generation
+
+java -Xms4m -Xmx16m -Xmn2m -XX:PermSize=12m -XX:MaxPermSize=18m -XX:+UseG1GC -jar <path_to_jar>
