@@ -1,0 +1,1 @@
+call java -Xss1M -Xms1024m -Xmx1024m -XX:NewRatio=3 -jar target\task3_2-1.0-SNAPSHOT-jar-with-dependencies.jar

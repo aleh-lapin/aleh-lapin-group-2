@@ -1,0 +1,1 @@
+call java -Xss2m -Xmx1024m -jar target\task3_1-1.0-SNAPSHOT-jar-with-dependencies.jar

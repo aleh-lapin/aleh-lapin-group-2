@@ -1,0 +1,1 @@
+call java -XX:MaxPermSize=1m -Xmx10m -jar target\task3_3-1.0-SNAPSHOT-jar-with-dependencies.jar
