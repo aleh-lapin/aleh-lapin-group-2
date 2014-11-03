@@ -3,8 +3,16 @@ package com.epam;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.epam.ifaces.IAccount;
+import com.epam.ifaces.ICurrencyExchanger;
+import com.epam.ifaces.ICurrencyRate;
+import com.epam.ifaces.IStorage;
 import com.epam.impl.AccountFileStorage;
+import com.epam.impl.AccountServiceImpl;
+import com.epam.impl.CurrencyRateServiceImpl;
 import com.epam.impl.CurrencyRateStorage;
+import com.epam.model.Account;
+import com.epam.model.CurrencyRate;
 
 public class App {
 
@@ -12,15 +20,20 @@ public class App {
 	
 	public static void main(String[] args) {
 		
-		CurrencyRateStorage currencyRateStorage = new CurrencyRateStorage();
-		AccountFileStorage accountFileStorage = new AccountFileStorage(currencyRateStorage);
+		IStorage<CurrencyRate, Long> currencyRateStorage = new CurrencyRateStorage();
+		IStorage<Account, Long> accountFileStorage = new AccountFileStorage();
 		
-		currencyGeneratorThread = new CurrencyGeneratorThread("Generator", currencyRateStorage);
+		ICurrencyRate iCurrencyRate = new CurrencyRateServiceImpl(currencyRateStorage);
+		ICurrencyExchanger iCurrencyExchanger = (CurrencyRateServiceImpl)iCurrencyRate;
+		
+		IAccount iAccount = new AccountServiceImpl(accountFileStorage, iCurrencyExchanger);
+		
+		currencyGeneratorThread = new CurrencyGeneratorThread("Generator", iCurrencyRate);
 		currencyGeneratorThread.start();
 		
 		List<ClientThread> clientThreads = new ArrayList<ClientThread>();
 		for (int i = 0; i < 10; i++) {
-			ClientThread clientThread = new ClientThread(i, "Client_" + i, accountFileStorage);
+			ClientThread clientThread = new ClientThread(i, "Client_" + i, iAccount);
 			clientThread.start();
 			clientThreads.add(clientThread);
 		}

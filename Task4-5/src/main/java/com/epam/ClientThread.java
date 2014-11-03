@@ -1,12 +1,14 @@
 package com.epam;
 
+import org.apache.log4j.Logger;
+
 import com.epam.ifaces.IAccount;
-import com.epam.ifaces.ICurrencyExchanger;
 import com.epam.model.Account;
 import com.epam.utils.RandomHelper;
 
 public class ClientThread extends Thread {
-
+	private static final Logger LOG = Logger.getLogger(ClientThread.class);
+	
 	private long id;
 	private IAccount iAccount;
 
@@ -29,7 +31,7 @@ public class ClientThread extends Thread {
 				Thread.sleep(100);
 			}
 		} catch (InterruptedException e) {
-			e.printStackTrace();
+			LOG.info("ClientThread " + getName() + " is stopped");
 		}
 	}
 
