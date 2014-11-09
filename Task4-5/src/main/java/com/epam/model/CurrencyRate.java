@@ -30,6 +30,35 @@ public class CurrencyRate implements Serializable{
 	public void setToCurrencyRate(Map<Long, Double> toCurrencyRate) {
 		this.toCurrencyRate = toCurrencyRate;
 	}
+	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + (int) (id ^ (id >>> 32));
+		result = prime * result
+				+ ((toCurrencyRate == null) ? 0 : toCurrencyRate.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		CurrencyRate other = (CurrencyRate) obj;
+		if (id != other.id)
+			return false;
+		if (toCurrencyRate == null) {
+			if (other.toCurrencyRate != null)
+				return false;
+		} else if (!toCurrencyRate.equals(other.toCurrencyRate))
+			return false;
+		return true;
+	}
 
 	@Override
 	public String toString() {

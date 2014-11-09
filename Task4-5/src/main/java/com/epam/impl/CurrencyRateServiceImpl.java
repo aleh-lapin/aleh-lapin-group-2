@@ -25,18 +25,18 @@ public class CurrencyRateServiceImpl implements ICurrencyRate, ICurrencyExchange
 		LOG.info("Create or Updated: " + currencyRate);
 	}
 
-	public synchronized CurrencyRate changeExchageRate(long from, long to,
-			double exchangeRate) {
-		CurrencyRate currencyRate = findCurrencyRate(from);
-		currencyRate.getToCurrencyRate().put(to, exchangeRate);
-		addOrUpdateCurrencyRate(currencyRate);
-		return currencyRate;
-	}
-
 	public synchronized double exchange(long from, long to, double currencyCount) {
 		CurrencyRate currencyRate = findCurrencyRate(from);
 		double rate = currencyRate.getToCurrencyRate().get(to);
 		return currencyCount * rate;
+	}
+
+	public IStorage<CurrencyRate, Long> getiStorage() {
+		return iStorage;
+	}
+
+	public void setiStorage(IStorage<CurrencyRate, Long> iStorage) {
+		this.iStorage = iStorage;
 	}
 
 }

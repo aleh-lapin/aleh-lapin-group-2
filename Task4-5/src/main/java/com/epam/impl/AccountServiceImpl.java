@@ -14,6 +14,9 @@ public class AccountServiceImpl implements IAccount {
 	private IStorage<Account, Long> iStorage;
 	private ICurrencyExchanger iCurrencyExchanger;
 
+	public AccountServiceImpl() {
+	}
+	
 	public AccountServiceImpl(IStorage<Account, Long> iStorage, ICurrencyExchanger iCurrencyExchanger) {
 		this.iStorage = iStorage;
 		this.iCurrencyExchanger = iCurrencyExchanger;
@@ -50,6 +53,22 @@ public class AccountServiceImpl implements IAccount {
 		LOG.info("Currency changed: currency " + oldCurrencyId + " -> "
 				+ account.getCurrency() + "; currencyCount  "
 				+ oldCurrencyCount + " -> " + account.getCurrentCount());
+	}
+
+	public IStorage<Account, Long> getiStorage() {
+		return iStorage;
+	}
+
+	public void setiStorage(IStorage<Account, Long> iStorage) {
+		this.iStorage = iStorage;
+	}
+
+	public ICurrencyExchanger getiCurrencyExchanger() {
+		return iCurrencyExchanger;
+	}
+
+	public void setiCurrencyExchanger(ICurrencyExchanger iCurrencyExchanger) {
+		this.iCurrencyExchanger = iCurrencyExchanger;
 	}
 
 }

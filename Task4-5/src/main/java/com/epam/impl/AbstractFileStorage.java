@@ -43,6 +43,7 @@ public abstract class AbstractFileStorage<T extends Serializable, ID extends Ser
 		}
 	}
 
+	@SuppressWarnings("unchecked")
 	private Map<ID, T> read() throws IOException {
 		Map<ID, T> records = null;
 		ObjectInputStream in = null;
