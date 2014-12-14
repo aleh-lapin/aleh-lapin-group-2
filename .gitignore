@@ -1,1 +1,3 @@
 /_ws
+**/target
+**/.settings
