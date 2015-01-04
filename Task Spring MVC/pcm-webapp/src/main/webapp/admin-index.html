@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link media="all" type="text/css" rel="stylesheet" href="css/admin-style.css" />
+	
+	<script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+	<div id="root">
+    	<div class="left-side">
+        	<h2>Панель управления</h2>
+            <ul>
+            	<li><a href="#">Категории</a></li>
+            	<li><a href="#">Организации</a></li>
+            	<li><a href="#">Пользователи</a></li>
+           		<li><a href="#">...</a></li>
+            </ul>
+        </div>
+        <!-- left-side -->
+        
+        <div class="center-side">
+        	<h1>Строительный магазин-пиццерия "Стройка"</h1>
+            <div class="content">
+            
+            	<div class="tabs">
+            		<a href="#" class="general">Общее</a>
+                	<a href="#" class="offer">Товары и услуги</a>
+                	<a href="#" class="update">Экспорт / импорт</a>
+                </div>
+
+                <div class="panel general" style="display:block;">
+                	<form>
+                    	<div class="field">
+                        	<label for="name">Название:</label>
+                            <input type="text" name="name" />
+                        </div>
+                    	<div class="field">
+                        	<label for="category">Категория:</label>
+                            <select name="category">
+                            	<option>Кафе</option>
+                                <option>Строительные магазины</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                        	<label for="name">Описание:</label>
+                            <textarea name="descr">Описание организации...</textarea>
+                        </div>
+                        <div class="field">
+                        	<label for="phones">Телефоны:</label>
+                            <input type="text" name="phones" />
+                        </div>
+                        <div class="field">
+                        	<label for="address">Адрес:</label>
+                            <input type="text" name="address" />
+                        </div>
+                        <div class="field">
+                        	<label for="email">E-mail:</label>
+                            <input type="text" name="email" />
+                        </div>
+                        <div class="field">
+                        	<label for="address">Расположение на карте:</label>
+                            <div class="map">
+                            	<input type="hidden" value="55.354135,40.297852" />
+                            </div>
+                        </div>
+                        <div class="field">
+                        	<label for="booking">Онлайн бронирование:</label>
+                            <input type="checkbox" name="booking" />
+                        </div>
+                        <div class="field">
+                        	<label for="manager">Менеджер</label>
+                            <select multiple  name="manager"> <!-- можем делегировать управление нескольким аккаунтам (менеджеру, организации) -->
+                            	<option>Менеджер Миша</option>
+                                <option>ООО "ПромВипРесурс"</option>
+                            </select>
+                        </div>
+                        
+                        <input type="submit" name="submit" value="Сохранить" />
+                    </form>
+                </div>
+                <!-- panel-general -->
+                
+                <div class="panel offer">
+                	<div class="categories">
+                    	<form>
+                        	<ul>
+                        	<li>
+                        		<input type="text" required name="category[0]" placeholder="Название категории..." />
+                                <select name="parent_category" >
+                                	<option>Горячие бутерброды</option>
+                                    <option>Прохлдные бутерброды</option>
+                                </select>
+                            </li>
+                            </ul>
+                            <a href="#" class="add-catergory">Добавить категорию</a>
+                        </form>
+                    </div>
+                    <!-- categories -->
+                    
+                    <div class="products">
+                    	<ul>
+                        	<li>
+                            	<div class="image"> <img src="#" width="50" height="50" /> </div>
+                                <div class="title">Пица 4 сезона</div>
+                                <div class="price">55 000 руб</div>
+                                <div class="tags"><span>пица</span> <span>мрак</span> </div>
+                                <div class="clear"></div>
+                            </li>
+                        	<li>
+                            	<div class="image"> <img src="#" width="50" height="50" /> </div>
+                                <div class="title">Герметик монтажный</div>
+                                <div class="price">55 000 руб</div>
+                                <div class="tags"><span>герметик</span></div>
+                                <div class="clear"></div>
+                            </li>
+                        </ul>
+                        <a href="#" class="add-product">Добавить товар (услугу)</a>
+                    </div>
+                    <!-- products -->
+                    <div class="clear"></div>
+                </div>
+                <!-- panel-offer -->
+                
+                <div class="panel update">
+                	<p>Экспорт каталога в .XLS</p>
+                    <a href="/admin/companies/stroika/?export=xls" style="text-decoration: underline;">Экспорт в .XLS</a>
+                    <br><br>
+                    
+                    <p>Импорт товаров (услуг) из .XLS</p>
+                    <form>
+                    	<input type="file" name="import" value="Выберите файл .xls" /><br>
+                        <input type="submit" name="submit" value="Импортировать!" />
+                    </form>
+                </div>
+                <!-- panel-update -->
+                
+                
+            </div>
+            <!-- content -->
+        </div>
+        <!-- center-side-->
+        
+    </div>
+</body>
+</html>

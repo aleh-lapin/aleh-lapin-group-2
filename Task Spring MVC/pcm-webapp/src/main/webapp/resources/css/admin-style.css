@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* RESET CSS */
+@font-face {
+	font-family: OpenSansLight;
+	src: local("Open Sans Light"),
+    url(../fonts/OpenSans-Light.ttf);
+}
+@font-face {
+	font-family: AFuturaRound;
+	src: local("AFuturaRound"),
+    url(../fonts/AFuturaRound.ttf);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	outline:none;
+	font-weight: normal;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ELEMENTS */
+
+body {
+	background: #fff;
+	color: #333;
+	font-size: 14px;
+	font-family: Arial;
+}
+.clear{
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	clear: both;
+}
+.center {text-align: center;}
+a {
+	color: #333;
+	text-decoration: none;
+}
+a:hover {
+}
+strong {font-weight: bold;}
+
+
+/* LAYOUT */
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+#root {
+	height: 100%;
+}
+
+.wrapper {
+	margin: 0 auto;
+	position: relative;
+	width: 1000px;
+}
+
+.left-side {
+	border-right: 1px solid #ccc;
+	height: 100%;
+	position: fixed;
+	width: 250px;
+}
+.left-side h2 {
+	font-size: 19px;
+	margin: 0 0 50px 0;
+}
+.left-side ul li ul {margin: 0 0 0 30px;}
+.left-side ul li {margin: 10px 0; border-bottom:1px solid #ccc; padding: 5px 0 10px 30px;}
+.left-side ul li a:hover {text-decoration: underline;}
+
+
+.center-side {
+	margin: 0 0 0 270px;
+}
+.center-side h1 {font-size: 19px;}
+.center-side .tabs {}
+.center-side .tabs a {
+	background: #eee;
+	border: 1px solid #dcdcdc;
+	border-radius: 3px;
+	display: inline-block;
+	padding: 5px 10px;
+}
+.center-side .panel {
+	border: 1px solid #dcdcdc;
+	display: none;
+	padding: 30px;
+}
+.center-side .panel.general {}
+.center-side .panel.general form {}
+.center-side .panel.general form .field {clear:both;}
+.center-side .panel.general form .field label {
+	float: left;
+	width: 200px;
+	text-align: right;
+}
+.center-side .panel.general form .field .map {width: 200px; height: 200px; border:1px solid #ccc; float:left;}
+
+.center-side .panel.offer {position: relative;}
+.center-side .panel.offer .categories {
+	float: left;
+	width: 400px;
+}
+.center-side .panel.offer .products {
+	border-left: 1px solid #ccc;
+	float: left;
+	padding: 0 0 0 10px;
+}
+.center-side .panel.offer .products ul {}
+.center-side .panel.offer .products ul li {}
+.center-side .panel.offer .products ul li .image {float: left;}
+.center-side .panel.offer .products ul li .tags span {border: 1px solid #ccc;}
