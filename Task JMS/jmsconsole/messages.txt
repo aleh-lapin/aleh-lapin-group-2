@@ -1,0 +1,159 @@
+2015-01-25 22:39:12 INFO  xnio:63 - XNIO Version 3.0.0.GA
+2015-01-25 22:40:15 INFO  xnio:63 - XNIO Version 3.0.0.GA
+2015-01-25 22:41:02 INFO  xnio:63 - XNIO Version 3.0.0.GA
+2015-01-25 22:42:35 INFO  xnio:63 - XNIO Version 3.0.0.GA
+2015-01-25 22:44:25 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 22:44:25 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 22:44:25 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 22:44:25 ERROR connection:99 - JBREM000200: Remote connection failed: javax.security.sasl.SaslException: Authentication failed: all available authentication mechanisms failed
+2015-01-25 22:46:07 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 22:46:07 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 22:46:08 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 22:46:36 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 22:46:37 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 22:46:37 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 22:46:37 ERROR connection:99 - JBREM000200: Remote connection failed: javax.security.sasl.SaslException: Authentication failed: all available authentication mechanisms failed
+2015-01-25 22:51:28 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 22:51:28 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 22:51:28 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 22:51:28 ERROR connection:99 - JBREM000200: Remote connection failed: javax.security.sasl.SaslException: Authentication failed: all available authentication mechanisms failed
+2015-01-25 22:52:25 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 22:52:26 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 22:52:26 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 22:52:26 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID 995b4107 (outbound) of Remoting connection 45bf47df to localhost/127.0.0.1:4447
+2015-01-25 22:53:33 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 22:53:33 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 22:53:33 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 22:53:33 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID f0ad66e9 (outbound) of Remoting connection 51247834 to localhost/127.0.0.1:4447
+2015-01-25 22:53:46 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 22:53:46 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 22:53:46 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 22:53:46 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID f5045ac7 (outbound) of Remoting connection 51247834 to localhost/127.0.0.1:4447
+2015-01-25 22:54:11 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 22:54:11 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 22:54:11 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 22:54:12 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID b69f6699 (outbound) of Remoting connection 5f689243 to localhost/127.0.0.1:4447
+2015-01-25 22:55:48 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 22:55:48 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 22:55:48 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 22:55:49 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID fda300e2 (outbound) of Remoting connection 314fc78a to localhost/127.0.0.1:4447
+2015-01-25 22:56:09 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 22:56:09 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 22:56:09 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 22:56:10 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID 9b463680 (outbound) of Remoting connection 588a4b96 to localhost/127.0.0.1:4447
+2015-01-25 23:01:00 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 23:01:00 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 23:01:00 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 23:01:00 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID 975007de (outbound) of Remoting connection 6d5535b7 to localhost/127.0.0.1:4447
+2015-01-25 23:01:22 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 23:01:22 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 23:01:22 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 23:01:22 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID afac6ebe (outbound) of Remoting connection 314fc78a to localhost/127.0.0.1:4447
+2015-01-25 23:02:16 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 23:02:16 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 23:02:16 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 23:02:17 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID 80606683 (outbound) of Remoting connection 357a56a7 to localhost/127.0.0.1:4447
+2015-01-25 23:02:17 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID 888c714b (outbound) of Remoting connection 5852765b to localhost/127.0.0.1:4447
+2015-01-25 23:04:00 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 23:04:00 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 23:04:00 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 23:04:00 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID fa65ab9f (outbound) of Remoting connection 2addc751 to localhost/127.0.0.1:4447
+2015-01-25 23:05:11 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 23:05:11 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 23:05:11 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 23:05:11 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID b6fe844a (outbound) of Remoting connection 4d4a74b1 to localhost/127.0.0.1:4447
+2015-01-25 23:05:53 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 23:05:53 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 23:05:53 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 23:05:53 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID 9dacfc1e (outbound) of Remoting connection 5333381b to localhost/127.0.0.1:4447
+2015-01-25 23:07:26 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 23:07:26 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 23:07:27 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 23:07:27 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID 874b529d (outbound) of Remoting connection 4648acd3 to localhost/127.0.0.1:4447
+2015-01-25 23:07:36 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 23:07:36 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 23:07:36 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 23:07:37 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID 8b8b772b (outbound) of Remoting connection 5dc4bfd2 to localhost/127.0.0.1:4447
+2015-01-25 23:08:16 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 23:08:16 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 23:08:16 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 23:08:42 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID fcd52756 (outbound) of Remoting connection 70d88496 to localhost/127.0.0.1:4447
+2015-01-25 23:10:02 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 23:10:02 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 23:10:02 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 23:10:43 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID 8484548e (outbound) of Remoting connection 3de53889 to localhost/127.0.0.1:4447
+2015-01-25 23:11:07 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 23:11:07 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 23:11:07 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 23:11:38 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID 9e4f1110 (outbound) of Remoting connection 4396d982 to localhost/127.0.0.1:4447
+2015-01-25 23:13:16 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 23:13:16 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 23:13:16 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 23:13:47 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID c67dfe1e (outbound) of Remoting connection 22eb3fbd to localhost/127.0.0.1:4447
+2015-01-25 23:14:15 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 23:14:15 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 23:14:15 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 23:14:35 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID cf70913d (outbound) of Remoting connection 540c1b0d to localhost/127.0.0.1:4447
+2015-01-25 23:22:59 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 23:22:59 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 23:22:59 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 23:23:29 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID a7f37b0a (outbound) of Remoting connection 02a5a334 to localhost/127.0.0.1:4447
+2015-01-25 23:27:36 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 23:27:36 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 23:27:36 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 23:27:36 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID c6d705ab (outbound) of Remoting connection 16bf08c7 to localhost/127.0.0.1:4447
+2015-01-25 23:30:47 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 23:30:47 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 23:30:47 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 23:31:17 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID d79a553d (outbound) of Remoting connection 32b98e7f to localhost/127.0.0.1:4447
+2015-01-25 23:35:44 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 23:35:44 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 23:35:44 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 23:36:15 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID 828f6b8e (outbound) of Remoting connection 03f81be9 to localhost/127.0.0.1:4447
+2015-01-25 23:38:21 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 23:38:21 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 23:38:21 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 23:38:52 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID acfb4dad (outbound) of Remoting connection 2c6e9867 to localhost/127.0.0.1:4447
+2015-01-25 23:39:12 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 23:39:12 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 23:39:13 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 23:39:13 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID 8b5066c5 (outbound) of Remoting connection 3cafcba8 to localhost/127.0.0.1:4447
+2015-01-25 23:42:05 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 23:42:05 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 23:42:05 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 23:42:06 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID add08bf5 (outbound) of Remoting connection 375779ce to localhost/127.0.0.1:4447
+2015-01-25 23:45:28 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 23:45:28 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 23:45:28 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 23:45:36 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID a7461f14 (outbound) of Remoting connection 5a766050 to localhost/127.0.0.1:4447
+2015-01-25 23:45:59 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-25 23:45:59 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-25 23:45:59 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-25 23:46:13 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID e16de800 (outbound) of Remoting connection 198ddef7 to localhost/127.0.0.1:4447
+2015-01-26 01:20:17 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-26 01:20:17 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-26 01:20:17 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-26 01:20:18 INFO  RemoteJMSClient:95 - Web: null
+2015-01-26 01:20:18 INFO  RemoteJMSClient:95 - Web: null
+2015-01-26 01:20:18 INFO  RemoteJMSClient:95 - Web: qweqweqw
+2015-01-26 01:21:11 INFO  RemoteJMSClient:95 - Console: qwewqe
+2015-01-26 01:21:27 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID bd3b8dfd (outbound) of Remoting connection 6767e4ea to localhost/127.0.0.1:4447
+2015-01-26 01:39:24 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-26 01:39:24 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-26 01:39:24 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-26 01:39:30 INFO  RemoteJMSClient:102 - Received: Web: qweqweqwe
+2015-01-26 01:39:40 INFO  RemoteJMSClient:93 - Send: Console: artart
+2015-01-26 01:55:27 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID d2ceff38 (outbound) of Remoting connection 4426edc5 to localhost/127.0.0.1:4447
+2015-01-26 01:56:10 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-26 01:56:10 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-26 01:56:10 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-26 01:56:18 INFO  RemoteJMSClient:93 - Send: Console: qweqwe
+2015-01-26 01:56:42 INFO  RemoteJMSClient:102 - Received: Web: qweqwe
+2015-01-26 01:56:49 INFO  RemoteJMSClient:93 - Send: Console: qwe
+2015-01-26 02:07:22 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID d16c9bca (outbound) of Remoting connection 2d34accc to localhost/127.0.0.1:4447
+2015-01-26 02:11:16 INFO  xnio:93 - XNIO version 3.3.0.Final
+2015-01-26 02:11:16 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2015-01-26 02:11:16 INFO  remoting:70 - JBoss Remoting version 3.2.7.GA
+2015-01-26 02:11:18 INFO  RemoteJMSClient:93 - Send: Console: qweqwe
+2015-01-26 02:11:31 INFO  RemoteJMSClient:102 - Received: Web: qweqweqw
+2015-01-26 02:15:30 ERROR RemoteNamingStoreV1:262 - Channel end notification received, closing channel Channel ID 9e5d83b8 (outbound) of Remoting connection 4426edc5 to localhost/127.0.0.1:4447

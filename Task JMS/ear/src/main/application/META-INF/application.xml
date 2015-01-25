@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:application="http://java.sun.com/xml/ns/javaee/application_5.xsd" xmlns:javaee="http://java.sun.com/xml/ns/javaee">
+  <javaee:display-name>JMS</javaee:display-name>
+  <module>
+    <web>
+      <web-uri>Jboss-web.war</web-uri>
+      <context-root>jboss-jms</context-root>
+    </web>
+  </module>
+  <module>
+    <ejb>Jboss-ejb.jar</ejb>
+  </module>
+  <library-directory>lib</library-directory>
+</application>
