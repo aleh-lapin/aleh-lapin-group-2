@@ -26,6 +26,7 @@
 	 		}
 	 		).done(function() {
 	 			console.log('Send');
+	 			$('#message').val('');
 	 		});
 	 	});
 	 	document.pool = function() {

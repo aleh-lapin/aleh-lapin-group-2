@@ -33,5 +33,23 @@
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/Users/Artyom/.m2/repository/javax/ejb/ejb-api/3.0/ejb-api-3.0.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="javax.ejb"/>
+			<attribute name="maven.artifactId" value="ejb-api"/>
+			<attribute name="maven.version" value="3.0"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/Artyom/.m2/repository/javax/ejb/javax.ejb-api/3.2/javax.ejb-api-3.2.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="javax.ejb"/>
+			<attribute name="maven.artifactId" value="javax.ejb-api"/>
+			<attribute name="maven.version" value="3.2"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
