@@ -133,7 +133,19 @@
 				</formats>
 			</configuration>
 		</plugin>
-	   </plugins>
+		  <plugin>
+	        <artifactId>maven-pmd-plugin</artifactId>
+	        <version>3.4</version>
+	        <reportSets>
+	          <reportSet>
+	            <reports>
+	              <report>pmd</report>
+	              <report>cpd</report>
+	            </reports>
+	          </reportSet>
+	        </reportSets>
+	      </plugin>
+       </plugins>
 	</reporting>
 
 	<dependencies>
