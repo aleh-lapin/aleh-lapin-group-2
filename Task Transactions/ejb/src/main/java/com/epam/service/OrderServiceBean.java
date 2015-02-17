@@ -5,6 +5,8 @@ import java.util.List;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 
+import org.apache.log4j.Logger;
+
 import com.epam.beans.Customer;
 import com.epam.beans.Order;
 import com.epam.beans.Ticket;
@@ -16,7 +18,9 @@ import com.epam.transactions.CompositeTransaction;
 
 @Stateless
 public class OrderServiceBean implements OrderService {
-
+	
+	private static Logger LOG = Logger.getLogger(OrderServiceBean.class);
+	
 	@Inject
 	CustomerRepository customerDAO;
 		
@@ -68,7 +72,11 @@ public class OrderServiceBean implements OrderService {
 	@Override
 	public long getBalance(String userId) {
 		Long id = Long.parseLong(userId); 
-		return customerDAO.get(id).getBalance();
+		Customer customer = customerDAO.get(id);
+		LOG.info("Id: " + id + ", customer: " + customer);
+		return customer.getBalance();
+		
+		
 	}
 
 }

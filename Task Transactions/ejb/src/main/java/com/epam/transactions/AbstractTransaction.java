@@ -49,7 +49,13 @@ public abstract class AbstractTransaction implements Participant {
 		getControl().setState(TransactionController.RUNING);
 		new Thread(){
 			public void run() {
-				startTransactionOperation();
+				try {
+					startTransactionOperation();
+					getControl().setState(TransactionController.FINISHED);
+				} catch (Exception e) {
+					LOG.error(e);
+					getControl().setState(TransactionController.ABORTED);
+				}
 			}
 		}.start();
 	}
@@ -67,8 +73,13 @@ public abstract class AbstractTransaction implements Participant {
 		getControl().setState(TransactionController.RUNING);
 		new Thread(){
 			public void run() {
-				commitOperation();
-				getControl().setState(TransactionController.FINISHED);
+				try {
+					commitOperation();
+					getControl().setState(TransactionController.FINISHED);
+				} catch (Exception e) {
+					LOG.error(e);
+					getControl().setState(TransactionController.ABORTED);
+				}
 			}
 		}.start();
 	}

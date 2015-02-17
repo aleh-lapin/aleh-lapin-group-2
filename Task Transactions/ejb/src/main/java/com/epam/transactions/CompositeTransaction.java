@@ -33,7 +33,8 @@ public class CompositeTransaction {
 		try {
 			LOG.info("Start");
 			coordinator.startTransactions();
-			
+			LOG.info("Synch");
+			coordinator.synchronize();
 			if (coordinator.getStatus()) {
 				LOG.info("Commit");
 				coordinator.commit();

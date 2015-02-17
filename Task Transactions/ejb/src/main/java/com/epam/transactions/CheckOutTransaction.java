@@ -36,6 +36,8 @@ public class CheckOutTransaction extends AbstractTransaction {
 		Customer customer = order.getCustomer();
 		long newBalance = customer.getBalance() - order.getTicket().getPrice();
 		customer.setBalance(newBalance);
+		//For test purposes
+		//throw new NullPointerException();
 	}
 
 	@Override
