@@ -5,6 +5,7 @@ import com.epam.beans.Order;
 import com.epam.dao.CustomerRepository;
 import com.epam.dao.OrderRepository;
 import com.epam.dao.TicketRepository;
+import com.epam.messaging.common.OrderStateSender;
 
 public class CheckOutTransaction extends AbstractTransaction {
 
@@ -36,6 +37,7 @@ public class CheckOutTransaction extends AbstractTransaction {
 		Customer customer = order.getCustomer();
 		long newBalance = customer.getBalance() - order.getTicket().getPrice();
 		customer.setBalance(newBalance);
+		OrderStateSender.getInstance(null).handleOrderChange(order);
 		//For test purposes
 		//throw new NullPointerException();
 	}
@@ -46,7 +48,7 @@ public class CheckOutTransaction extends AbstractTransaction {
 		orderRepo.create(order);
 		customerRepo.update(order.getCustomer());
 		ticketRepo.update(order.getTicket());
-
+		OrderStateSender.getInstance(null).handleOrderChange(order);
 	}
 
 	@Override
@@ -56,6 +58,7 @@ public class CheckOutTransaction extends AbstractTransaction {
 		Customer customer = order.getCustomer();
 		long oldBalance = customer.getBalance() + order.getTicket().getPrice();
 		customer.setBalance(oldBalance);
+		OrderStateSender.getInstance(null).handleOrderChange(order);
 	}
 
 }
